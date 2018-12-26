@@ -18,6 +18,7 @@ before_script:
 
 script:
   # Test (TODO: create tests)
+  - echo "CREATE TESTS!"
 
 deploy:
   provider: bluemixcloudfoundry
