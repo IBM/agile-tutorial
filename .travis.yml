@@ -1,0 +1,36 @@
+dist: trusty
+
+group: bluezone
+
+language: python
+
+python:
+    - "3.6"
+
+install:
+  # Install Python script dependencies
+  - pip install --quiet --upgrade setuptools flake8 pip
+  - pip install --quiet -r requirements.txt
+
+before_script:
+  # Run Python linter
+  - flake8 src/ test/
+
+script:
+  # Test (TODO: create tests)
+
+deploy:
+  provider: bluemixcloudfoundry
+  username: apikey
+  password: $IBMCLOUD_API_KEY
+  organization: rneumann@br.ibm.com
+  space: dev
+  manifest: manifest.yml
+  region: ng
+  api: https://api.ng.bluemix.net
+  on:
+    branch:
+      - master
+
+notifications:
+  slack: ibm-research:gsBidsvzx4efe07iBit0931m
