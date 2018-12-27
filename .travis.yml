@@ -14,14 +14,18 @@ install:
   - pip install --quiet --upgrade pip setuptools
   - pip install --quiet --upgrade -r requirements.txt
 
+  # Install Python linter
+  - pip install --quiet --upgrade flake8
+
+  # Install Python testing and coverage
+  - pip install --quiet --upgrade pytest pytest-cov
+
 before_script:
   # Run Python linter
-  - pip install --quiet --upgrade flake8
   - flake8 --max-line-length=100 src/ test/
 
 script:
   # Run tests and coverage
-  - pip install --quiet --upgrade pytest pytest-cov
   - python -m pytest -v --cov-report=term-missing --cov-fail-under=80 --cov=src/
 
 deploy:
