@@ -14,7 +14,7 @@ install:
 
 before_script:
   # Run Python linter
-  - flake8 src/ test/
+  - flake8 --max-line-length=100 src/ test/
 
 script:
   # Test (TODO: create tests)

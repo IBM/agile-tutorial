@@ -1,21 +1,18 @@
 import os
+
 from flask import Flask, jsonify
 from flask_restplus import Api, Resource
 
 app = Flask(__name__)
-api = Api(app,
-          version='1.0',
-          doc='/apidocs/',
-          title='My first Python API',
-          description='A number-crunching API')
+api = Api(app, version='1.0', doc='/apidocs/', title='Agile Tutorial', description='Python API')
+my_list = list()
 
 
-@api.route('/double/<int:number>')
-@api.doc(params={'number': 'Number to be doubled.'},
-         description='This method doubles the input.')
-class DoubleNumber(Resource):
-    def get(self, number):
-        return jsonify(result=2 * number)
+@api.route('/list/print')
+@api.doc(description='Print current list.')
+class PrintList(Resource):
+    def get(self):
+        return jsonify(list=my_list)
 
 
 port = os.getenv('PORT', '5000')
