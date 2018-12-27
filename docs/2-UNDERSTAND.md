@@ -38,4 +38,12 @@
 1. Click the **Connect with an issue** button and enter the related issue number.
 1. Submit the Pull Request using the **Create pull request** (green) button.
 
-## Reporting test coverage
+## Tracking test status and coverage
+
+1. Once submitted, find your Pull Request in the [open PR list](https://github.ibm.com/brl-its/agile-tutorial/pulls).
+1. Scroll to the bottom and look for the status checks.
+1. Click **Show all checks** and click **Detail** to see the Travis CI build log.
+1. In the Travis CI build log, make sure
+    * all files are compliant with `flake8` linter
+    * all tests in `test/*_test.py` have **PASSED**
+    * all files in `src/*.py` have **100%** test coverage.
