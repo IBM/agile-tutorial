@@ -22,7 +22,7 @@ before_script:
 script:
   # Run tests and coverage
   - pip install --quiet --upgrade pytest pytest-cov
-  - python -m pytest -v --cov-report=term-missing --cov-fail-under=80 --cov=src/modules/
+  - python -m pytest -v --cov-report=term-missing --cov-fail-under=80 --cov=src/
 
 deploy:
   provider: bluemixcloudfoundry

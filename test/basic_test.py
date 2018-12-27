@@ -1,5 +1,5 @@
-from src.main import app
-from src.modules import basic_functions as bf
+from main import app
+from src import basic_functions as bf
 
 
 def test_to_json():
