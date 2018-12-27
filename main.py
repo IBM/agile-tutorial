@@ -4,7 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
 
-from modules import basic_functions as bf
+from src import basic_functions as bf
 
 # Setting up Python API
 my_list = list()
