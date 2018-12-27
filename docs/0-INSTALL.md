@@ -38,7 +38,7 @@
     * Mozilla Firefox: browser extension
     * Other browsers: web app.
 1. Sign in with your GitHub Enterprise credentials.
-1. Select the `brl-its` organization and `agile-tutorial` repository in the [web app](https://zenhub.ibm.com/app/workspaces/agile-tutorial-5c240173b7d41fe10dbe52e6/boards) or the [ZenHub tab](https://github.ibm.com/brl-its/agile-tutorial#zenhub) using the browser extension.
+1. Select `brl-its` as organization and `agile-tutorial` as repository in the [web app](https://zenhub.ibm.com/app/workspaces/agile-tutorial-5c240173b7d41fe10dbe52e6/boards) or the [ZenHub tab](https://github.ibm.com/brl-its/agile-tutorial#zenhub) using the browser extension.
 
 ## Installing Visual Studio Code
 
