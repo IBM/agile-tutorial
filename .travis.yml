@@ -20,9 +20,9 @@ before_script:
   - flake8 --max-line-length=100 src/ test/
 
 script:
-  # Run tests
-  - pip install --quiet --upgrade pytest
-  - python -m pytest -v
+  # Run tests and coverage
+  - pip install --quiet --upgrade pytest pytest-cov
+  - python -m pytest -v --cov-report=term-missing --cov-fail-under=90 --cov=src/modules/
 
 deploy:
   provider: bluemixcloudfoundry
