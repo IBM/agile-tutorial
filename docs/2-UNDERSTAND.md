@@ -2,7 +2,7 @@
 
 ## Having SCRUM meetings
 
-1. The SCRUM methodology is charaterized by having specific [roles](https://en.wikipedia.org/wiki/Scrum_(software_development)#Roles) and [workflows](https://en.wikipedia.org/wiki/Scrum_(software_development)#Workflow).
+1. The SCRUM methodology is characterized by having specific [roles](https://en.wikipedia.org/wiki/Scrum_(software_development)#Roles) and [workflows](https://en.wikipedia.org/wiki/Scrum_(software_development)#Workflow).
 1. The SCRUM [roles](https://en.wikipedia.org/wiki/Scrum_(software_development)#Roles) can be summarized as
     * Product Owner: represents the product's stakeholders and the voice of the customer.
     * Scrum master: a facilitator that helps to ensure the team follows the agreed processes.
@@ -25,7 +25,7 @@
 
 ## Submitting a Pull Request
 
-1. Open the [`brl-its/agile-tutorial`](https://github.ibm.com/brl-its/agile-tutorial) repository on GitHub.
+1. After all commits have been made to your branch, open the [`brl-its/agile-tutorial`](https://github.ibm.com/brl-its/agile-tutorial) repository on GitHub.
 1. Select your branch from the drop-down menu on the left.
 
 ## Reporting test coverage
