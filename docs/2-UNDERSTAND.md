@@ -11,7 +11,8 @@
     * Sprint planning: bi-weekly meetings for agreeing on the tasks to be done during that sprint.
     * Daily scrum: 15-min meeting to report on what was done the previous day, the plans for that day and potential impediments.
     * Sprint review: after the sprint, the team reviews what was done and what can be improved in the next sprints.
-1. Everything that happens during the SCRUM cycle should be captured in a [issue board](https://en.wikipedia.org/wiki/Kanban_board) which should be **always up-to-date**.
+1. Everything that happens during the SCRUM cycle must be transferred to an [issue board](https://en.wikipedia.org/wiki/Kanban_board).
+1. Keep the board **always up-to-date**.
 
 ## Using the "GitHub Flow" branching model
 
