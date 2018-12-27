@@ -20,6 +20,16 @@
         ```
 1. (macOS) Open GitHub Desktop and click **Install Command Line Tool...**.
 
+## Setting up Travis CI Enterprise
+
+1. Go to [Travis CI Enterprise](https://travis.ibm.com/).
+1. Click **Sign in with GitHub** and enter your w3 credentials.
+1. Hover the mouse over your profile name in the top-right corner and click **Accounts**.
+1. Click the **Sync account** button on the top-right corner.
+1. Access the [`brl-its/agile-tutorial`](https://travis.ibm.com/brl-its/agile-tutorial) dashboard.
+1. Analyze steps of the latest build log.
+1. Check the status of each build in the [Branches](https://travis.ibm.com/brl-its/agile-tutorial/branches) tab.
+
 ## Installing Visual Studio Code
 
 1. Go to [Visual Studio Code download page](https://code.visualstudio.com/Download).
