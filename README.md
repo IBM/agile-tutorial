@@ -22,6 +22,6 @@ using
 
 ## Instructions
 
-1. Read [**Installing developer tools and environments**](tutorial/0-INSTALL.md) and follow the steps.
-    1. [Setting up GitHub Enterprise environment](tutorial/0-INSTALL.md#setting-up-github-enterprise-environment)
-    1. [Installing Visual Studio Code](tutorial/0-INSTALL.md#installing-visual-studio-code)
+1. Read [**Installing developer tools and environments**](docs/0-INSTALL.md) and follow the steps.
+    1. [Setting up GitHub Enterprise environment](docs/0-INSTALL.md#setting-up-github-enterprise-environment)
+    1. [Installing Visual Studio Code](docs/0-INSTALL.md#installing-visual-studio-code)
