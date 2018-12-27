@@ -11,16 +11,18 @@ cache: pip
 
 install:
   # Install Python script dependencies
-  - pip install --quiet --upgrade setuptools flake8 pip
-  - pip install --quiet -r requirements.txt
+  - pip install --quiet --upgrade pip setuptools
+  - pip install --quiet --upgrade -r requirements.txt
 
 before_script:
   # Run Python linter
+  - pip install --quiet --upgrade flake8
   - flake8 --max-line-length=100 src/ test/
 
 script:
-  # Test (TODO: create tests)
-  - echo "CREATE TESTS!"
+  # Run tests
+  - pip install --quiet --upgrade pytest
+  - pytest
 
 deploy:
   provider: bluemixcloudfoundry
