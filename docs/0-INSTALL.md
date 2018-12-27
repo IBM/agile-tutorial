@@ -30,6 +30,16 @@
 1. Analyze steps of the latest build log.
 1. Check the status of each build in the [Branches](https://travis.ibm.com/brl-its/agile-tutorial/branches) tab.
 
+## Setting up ZenHub Enterprise
+
+1. Go to the [ZenHub Enterprise](https://zenhub.ibm.com/setup/download) page.
+1. Choose and install the appropriate browser extension or web application
+    * Google Chrome: browser extension.
+    * Firefox: browser extension
+    * Others: web app.
+1. Sign in with your GitHub Enterprise credentials.
+1. Select the `brl-its` organization and `agile-tutorial` repository in the [web app](https://zenhub.ibm.com/app/workspaces/agile-tutorial-5c240173b7d41fe10dbe52e6/boards) or the [ZenHub tab](https://github.ibm.com/brl-its/agile-tutorial#zenhub) using the browser extension.
+
 ## Installing Visual Studio Code
 
 1. Go to [Visual Studio Code download page](https://code.visualstudio.com/Download).
