@@ -1,8 +1,10 @@
 import os
 
-from flask import Flask, jsonify
+from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
+
+from src.modules import basic_functions as bf
 
 # Setting up Python API
 my_list = list()
@@ -20,7 +22,7 @@ math_ns = api.namespace('math', description='Math operations')
 @basic_ns.doc(description='Print current list.')
 class PrintList(Resource):
     def get(self):
-        return jsonify(list=my_list)
+        return bf.to_json(my_list)
 
 
 port = os.getenv('PORT', '5000')
