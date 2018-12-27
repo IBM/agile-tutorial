@@ -22,7 +22,7 @@ before_script:
 script:
   # Run tests
   - pip install --quiet --upgrade pytest
-  - pytest
+  - python -m pytest
 
 deploy:
   provider: bluemixcloudfoundry
