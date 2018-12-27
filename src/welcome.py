@@ -2,8 +2,10 @@ import os
 
 from flask import Flask, jsonify
 from flask_restplus import Api, Resource
+from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(app.wsgi_app)
 api = Api(app, version='1.0', doc='/apidocs/', title='Agile Tutorial', description='Python API')
 my_list = list()
 
