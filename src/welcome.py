@@ -9,8 +9,10 @@ app.wsgi_app = ProxyFix(app.wsgi_app)
 api = Api(app, version='1.0', doc='/apidocs/', title='Agile Tutorial', description='Python API')
 my_list = list()
 
+ns = api.namespace('basic', description='List manipulation')
 
-@api.route('/list/print')
+
+@api.route('/basic/print')
 @api.doc(description='Print current list.')
 class PrintList(Resource):
     def get(self):
