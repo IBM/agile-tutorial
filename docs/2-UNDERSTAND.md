@@ -1,4 +1,4 @@
-# Understand agile development practices and frameworks
+# Understanding agile development practices and frameworks
 
 ## Having SCRUM meetings
 

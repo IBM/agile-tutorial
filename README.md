@@ -28,7 +28,7 @@ using
     1. [Setting up ZenHub Enterprise](docs/1-INSTALL.md#setting-up-zenhub-enterprise)
     1. [Installing Visual Studio Code](docs/1-INSTALL.md#installing-visual-studio-code)
 
-1. Read [**Understand agile development practices and frameworks**](docs/2-UNDERSTAND.md) and follow the steps.
+1. Read [**Understanding agile development practices and frameworks**](docs/2-UNDERSTAND.md) and follow the steps.
     1. [Having SCRUM meetings](docs/2-UNDERSTAND.md#having-scrum-meetings)
     1. [Using the "GitHub Flow" branching model](docs/2-UNDERSTAND.md#using-the-github-flow-branching-model)
     1. [Submitting a Pull Request](docs/2-UNDERSTAND.md#submitting-a-pull-request)
