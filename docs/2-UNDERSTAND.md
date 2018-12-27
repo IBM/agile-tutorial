@@ -26,6 +26,16 @@
 ## Submitting a Pull Request
 
 1. After all commits have been made to your branch, open the [`brl-its/agile-tutorial`](https://github.ibm.com/brl-its/agile-tutorial) repository on GitHub.
-1. Select your branch from the drop-down menu on the left.
+1. Select your branch from the drop-down menu on the left and then click **New pull request**.
+1. Write a meaningful title for the Pull Request, preferably one that refers to the issue that it addresses.
+1. Describe the changes introduced by the Pull Request in the **Summary** section.
+1. Revise the **Checklist**, marking actions as "done" using `[x]`.
+1. Add the number `#N` of the **Related Issue** that is closed by this Pull Request.
+1. In case there is any information that would help the reviewer, add it to **Notes to Reviewer**.
+1. Select a reviewer from the **Reviewers** menu on the right.
+1. Assign yourself from the **Assignees** menu on the right.
+1. Select the appropriate labels from the **Labels** menu on the right.
+1. Click the **Connect with an issue** button and enter the related issue number.
+1. Submit the Pull Request using the **Create pull request** (green) button.
 
 ## Reporting test coverage
