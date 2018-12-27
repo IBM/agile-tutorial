@@ -8,14 +8,7 @@ from werkzeug.contrib.fixers import ProxyFix
 my_list = list()
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
-api = Api(app,
-          version='1.0',
-          license='Apache-2.0',
-          title='Agile Tutorial',
-          contact='rneumann@br.ibm.com',
-          license_url='https://www.apache.org/licenses/LICENSE-2.0',
-          description='A Python API for manipulating a list of integer numbers',
-          )
+api = Api(app, version='1.0', title='Agile Tutorial', description='A simple Python API')
 api.namespaces.clear()
 
 # Creating API namespaces
