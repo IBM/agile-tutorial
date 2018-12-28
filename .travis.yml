@@ -29,7 +29,7 @@ script:
   - python -m pytest -v
 
   # Run test coverage
-  - coverage report --show-missing --fail-under=99
+  - coverage report --show-missing --fail-under=99 --include=src/*
 
 deploy:
   provider: bluemixcloudfoundry
