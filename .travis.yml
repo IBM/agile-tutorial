@@ -18,18 +18,15 @@ install:
   - pip install --quiet --upgrade flake8
 
   # Install Python testing and coverage
-  - pip install --quiet --upgrade pytest coverage
+  - pip install --quiet --upgrade pytest pytest-cov
 
 before_script:
   # Run Python linter
   - flake8 --max-line-length=100 src/ test/
 
 script:
-  # Run tests
-  - python -m pytest -v
-
-  # Run test coverage
-  - coverage report --show-missing --fail-under=99 --include=src/*
+  # Run tests and coverage report
+  - python -m pytest -v --cov-report=term-missing --cov-fail-under=99 --cov=src/
 
 deploy:
   provider: bluemixcloudfoundry
