@@ -4,7 +4,7 @@ def TheAnswerToLifeTheUniverseAndEverything():
 
     Returns
     -------
-    the_answer : integer
+    answer : integer
         See https://en.wikipedia.org/wiki/42_(number)#Popular_culture.
     """
 

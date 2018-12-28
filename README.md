@@ -33,3 +33,10 @@ using
     1. [Using the "GitHub Flow" branching model](docs/2-UNDERSTAND.md#using-the-github-flow-branching-model)
     1. [Submitting a Pull Request](docs/2-UNDERSTAND.md#submitting-a-pull-request)
     1. [Tracking test status and coverage](docs/2-UNDERSTAND.md#tracking-test-status-and-coverage)
+
+1. Read [**Exploring the Python application**](docs/3-EXPLORE.md) and follow the steps.
+    1. [Cloning the repository](docs/3-EXPLORE.md#cloning-the-repository)
+    1. [Testing the example implementation](docs/3-EXPLORE.md#testing-the-example-implementation)
+    1. [Understanding the API resources](docs/3-EXPLORE.md#understanding-the-API-resources)
+    1. [Understanding the API services](docs/3-EXPLORE.md#understanding-the-API-services)
+    1. [Understanding the API tests](docs/3-EXPLORE.md#understanding-the-API-tests)
