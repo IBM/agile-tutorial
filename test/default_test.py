@@ -1,5 +1,5 @@
-from src import default_functions as df
+from src import default_services as ds
 
 
 def test_answer():
-    assert df.TheAnswerToLifeTheUniverseAndEverything() == 42
+    assert ds.TheAnswerToLifeTheUniverseAndEverything() == 42

@@ -4,7 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
 
-from src import default_functions as df
+from src import default_services as ds
 
 # Setting up Python API
 my_list = list()
@@ -21,7 +21,7 @@ math_ns = api.namespace('math', description='Math operations')
 @api.doc(description='The Answer to the Ultimate Question of Life, the Universe, and Everything.')
 class TheAnswer(Resource):
     def get(self):
-        return df.TheAnswerToLifeTheUniverseAndEverything()
+        return ds.TheAnswerToLifeTheUniverseAndEverything()
 
 
 port = os.getenv('PORT', '5000')
