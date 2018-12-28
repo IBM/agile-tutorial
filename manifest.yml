@@ -4,8 +4,8 @@ applications:
   memory: 128M
   disk_quota: 1G
   stack: cflinuxfs2
-  name: agile-application
+  name: agile-tutorial
   buildpacks:
     - python_buildpack
   routes:
-    - route: agile-application.mybluemix.net
+    - route: agile-tutorial.mybluemix.net
