@@ -25,7 +25,7 @@
 
 ## Understanding the API resources
 
-1. Open the **`agile-tutorial`** repository in Visual Studio Code.
+1. Open the `agile-tutorial` repository in Visual Studio Code.
 1. Open the `main.py` file.
 1. Read the code block associated with the `/answer` resource and compare it to the live application.
     * `@api.route()` defines the endpoint URL.
@@ -36,7 +36,7 @@
 
 ## Understanding the API services
 
-1. Open the **`agile-tutorial`** repository in Visual Studio Code.
+1. Open the `agile-tutorial` repository in Visual Studio Code.
 1. Open the `src/default_services.py` file.
 1. Read the code block associated with the `TheAnswerToLifeTheUniverseAndEverything()` service and compare it to the live application.
     * `TheAnswerToLifeTheUniverseAndEverything()` is the function name evoked in the `return` statement of the `/answer` resource.
@@ -45,7 +45,7 @@
 
 ## Understanding the API tests
 
-1. Open the **`agile-tutorial`** repository in Visual Studio Code.
+1. Open the `agile-tutorial` repository in Visual Studio Code.
 1. Open the `test/default_test.py` file.
 1. Read the code block associated with the `test_answer()` test and compare it to the Travis CI [build log](https://travis.ibm.com/brl-its/agile-tutorial).
     * `from src import default_services as ds` includes the external file containing the service to be tested.

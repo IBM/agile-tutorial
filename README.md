@@ -37,6 +37,6 @@ using
 1. Read [**Exploring the Python application**](docs/3-EXPLORE.md) and follow the steps.
     1. [Cloning the repository](docs/3-EXPLORE.md#cloning-the-repository)
     1. [Testing the example implementation](docs/3-EXPLORE.md#testing-the-example-implementation)
-    1. [Understanding the API resources](docs/3-EXPLORE.md#understanding-the-API-resources)
-    1. [Understanding the API services](docs/3-EXPLORE.md#understanding-the-API-services)
-    1. [Understanding the API tests](docs/3-EXPLORE.md#understanding-the-API-tests)
+    1. [Understanding the API resources](docs/3-EXPLORE.md#understanding-the-api-resources)
+    1. [Understanding the API services](docs/3-EXPLORE.md#understanding-the-api-services)
+    1. [Understanding the API tests](docs/3-EXPLORE.md#understanding-the-api-tests)
