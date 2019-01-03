@@ -3,7 +3,7 @@
 ## Using Slack to monitor the development cycle
 
 1. Open the [`agile-tutorial`](https://ibm-research.slack.com/messages/GF23AGU4A) Slack channel.
-1. Note how every `git push` generates a message from **GitHub Enterprise** bot.
+1. Note how every synchronisation generates a message from **GitHub Enterprise** bot.
 1. Note how every automated build generates a message from **Travis CI Enterprise** bot.
 1. Note how every issue closed or created generates a message from **GitHub Enterprise** bot.
 1. Note how every modification of an issue's details generates a message from **ZenHub** bot.
@@ -46,7 +46,7 @@ In this section we will go over the practical steps that were broadly described 
 1. Select your branch from the drop-down menu on the left and then click **New pull request**.
 1. Write a meaningful title for the Pull Request, preferably one that refers to the issue that it addresses.
 1. Describe the changes introduced by the Pull Request in the **Summary** section.
-1. Revise the **Checklist**, marking actions as "done" using `[x]`.
+1. Revise the **Checklist**, marking actions as "done" by using `[x]`.
 1. Add the number `#N` of the **Related Issue** that is closed by this Pull Request.
 1. In case there is any information that would help the reviewer, add it to **Notes to Reviewer**.
 1. Select the SCRUM master as reviewer from the **Reviewers** menu on the right.
@@ -69,11 +69,11 @@ In this section we will go over the practical steps that were broadly described 
 
 ## Merging and moving on
 
-1. Once the status checks are all successful warn the reviewer that your Pull Request is pending approval.
+1. Once the status checks are all successful, warn the reviewer that your Pull Request is pending approval.
 1. The reviewer will either **Approve** or **Request changes** to your PR.
 1. If the reviewer **Requested changes**, you should address them by submitting new code to your branch.
 1. If the reviewer **Approved** your Pull Request, no action is required.
 1. After all the approvals, status checks and branch protections have been satisfied, your branch will be merged into `master`.
 1. Go back to Visual Studio Code and click the button with your branch name in the bottom left corner.
-1. Synchronise your local `master` branch with that of GitHub Enterprise by clicking the :arrows_counterclockwise: icon on the bottom left bar.
+1. Synchronise your local `master` branch with that of GitHub Enterprise by clicking the :arrows_counterclockwise: icon on the bottom left corner.
 1. Get ready for the next sprint!!!
