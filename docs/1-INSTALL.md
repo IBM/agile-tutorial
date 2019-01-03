@@ -9,9 +9,9 @@
     * macOS: Download [GitHub Desktop Client](https://desktop.github.com) or `brew cask install github`.
     * Windows: Download [GitHub Desktop Client](https://desktop.github.com).
     * Fedora: `sudo dnf install git`.
-1. Follow the [instructions](https://help.github.com/desktop/guides/getting-started-with-github-desktop/setting-up-github-desktop/) to setup GitHub Desktop to use <https://github.ibm.com> as GitHub Enterprise server.
+1. Follow the [instructions](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/) and setup GitHub Desktop to use <https://github.ibm.com> as GitHub Enterprise server.
     * *Note to Windows users*: In case Firefox cannot handle the operation, copy and paste the URL into Internet Explorer.
-1. Define your Git identification credentials
+1. Define your Git identification credentials according to your [profile page](https://github.ibm.com/settings/profile).
     * macOS and Windows: Under **Preferences / Options**, go to the **Git** tab and fill in your **Name** and **Email** address.
     * Fedora: Open a terminal and enter
         ```Shell
@@ -34,10 +34,9 @@
 
 1. Go to the [ZenHub Enterprise](https://zenhub.ibm.com/setup/download) page.
 1. Choose and install the appropriate browser extension or web application
-    * Google Chrome: browser extension.
-    * Mozilla Firefox: browser extension
-    * Other browsers: web app.
-1. Sign in with your GitHub Enterprise credentials.
+    * Browser extension: only for Google Chrome and Firefox.
+    * Web application: any browser.
+1. Sign in with your **GitHub Enterprise** credentials.
 1. Select `brl-its` as organization and `agile-tutorial` as repository in the [web app](https://zenhub.ibm.com/app/workspaces/agile-tutorial-5c240173b7d41fe10dbe52e6/boards) or the [ZenHub tab](https://github.ibm.com/brl-its/agile-tutorial#zenhub) using the browser extension.
 
 ## Installing Visual Studio Code
