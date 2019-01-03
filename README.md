@@ -39,3 +39,11 @@ using
     1. [Understanding the API resources](docs/3-EXPLORE.md#understanding-the-api-resources)
     1. [Understanding the API services](docs/3-EXPLORE.md#understanding-the-api-services)
     1. [Understanding the API tests](docs/3-EXPLORE.md#understanding-the-api-tests)
+
+1. Read [**Developing an application collaboratively**](docs/4-DEVELOP.md) and follow the steps.
+    1. [Using Slack to monitor the development cycle](docs/4-DEVELOP.md#using-slack-to-monitor-the-development-cycle)
+    1. [Planning the sprint](docs/4-DEVELOP.md#planning-the-sprint)
+    1. [Contributing to your branch](docs/4-DEVELOP.md#contributing-to-your-branch)
+    1. [Submitting your Pull Request](docs/4-DEVELOP.md#submitting-your-pull-request)
+    1. [Tracking status checks](docs/4-DEVELOP.md#tracking-status-checks)
+    1. [Merging and moving on](docs/4-DEVELOP.md#merging-and-moving-on)
