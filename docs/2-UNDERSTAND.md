@@ -11,7 +11,7 @@
     * Sprint planning: bi-weekly meetings for agreeing on the tasks to be done during that sprint.
     * Daily scrum: 15-min meeting to report on what was done the previous day, the plans for that day and potential impediments.
     * Sprint review: after the sprint, the team reviews what was done and what can be improved in the next sprints.
-1. Everything that happens during the SCRUM cycle must be transferred to an [issue board](https://en.wikipedia.org/wiki/Kanban_board).
+1. Everything that happens during the SCRUM cycle must be documented in an [issue board](https://en.wikipedia.org/wiki/Kanban_board).
 1. Keep the board **always up-to-date**.
 
 ## Using the "GitHub Flow" branching model
@@ -24,27 +24,13 @@
 1. Discuss you submission in the Pull Request review process, ensuring all [status checks](https://help.github.com/articles/github-glossary/#status-checks) are successful.
 1. Once the Pull Request has been approved, [merge](https://help.github.com/articles/github-glossary/#merge) your branch into `master`.
 
-## Submitting a Pull Request
+## Automating integration, delivery and deployment
 
-1. After all commits have been made to your branch, open the [`brl-its/agile-tutorial`](https://github.ibm.com/brl-its/agile-tutorial) repository on GitHub.
-1. Select your branch from the drop-down menu on the left and then click **New pull request**.
-1. Write a meaningful title for the Pull Request, preferably one that refers to the issue that it addresses.
-1. Describe the changes introduced by the Pull Request in the **Summary** section.
-1. Revise the **Checklist**, marking actions as "done" using `[x]`.
-1. Add the number `#N` of the **Related Issue** that is closed by this Pull Request.
-1. In case there is any information that would help the reviewer, add it to **Notes to Reviewer**.
-1. Select a reviewer from the **Reviewers** menu on the right.
-1. Assign yourself from the **Assignees** menu on the right.
-1. Select the appropriate labels from the **Labels** menu on the right.
-1. Click the **Connect with an issue** button and enter the related issue number.
-1. Submit the Pull Request using the **Create pull request** (green) button.
-
-## Tracking test status and coverage
-
-1. Once submitted, find your Pull Request in the [open PR list](https://github.ibm.com/brl-its/agile-tutorial/pulls).
-1. Scroll to the bottom and look for the status checks.
-1. Click **Show all checks** and click **Detail** to see the Travis CI build log.
-1. In the Travis CI build log, make sure
-    * all files are compliant with `flake8` linter
-    * all tests in `test/*_test.py` have **PASSED**
-    * all files in `src/*.py` have **100%** test coverage.
+1. [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) is the practice of merging all developer branches into the `master` branch as often as possible.
+1. [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) is the practice of producing fully working (tested) incremental updates that could potentially be deployed at any time.
+1. [Continuous Deployment](https://en.wikipedia.org/wiki/Continuous_deployment) is the practice to automating the deployments of each new version that is delivered.
+1. Although there are overlaps between those concepts, when they are all applied, one ends up with
+    * a single source code repository
+    * automated builds
+    * automated tests
+    * automated deployments

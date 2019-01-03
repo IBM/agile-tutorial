@@ -31,8 +31,7 @@ using
 1. Read [**Understanding agile development practices and frameworks**](docs/2-UNDERSTAND.md) and follow the steps.
     1. [Having SCRUM meetings](docs/2-UNDERSTAND.md#having-scrum-meetings)
     1. [Using the "GitHub Flow" branching model](docs/2-UNDERSTAND.md#using-the-github-flow-branching-model)
-    1. [Submitting a Pull Request](docs/2-UNDERSTAND.md#submitting-a-pull-request)
-    1. [Tracking test status and coverage](docs/2-UNDERSTAND.md#tracking-test-status-and-coverage)
+    1. [Automating integration, delivery and deployment](docs/2-UNDERSTAND.md#automating-integration-delivery-and-deployment)
 
 1. Read [**Exploring the Python application**](docs/3-EXPLORE.md) and follow the steps.
     1. [Cloning the repository](docs/3-EXPLORE.md#cloning-the-repository)
