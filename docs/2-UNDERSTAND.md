@@ -34,3 +34,4 @@
     * automated builds
     * automated tests
     * automated deployments
+1. We will use [Travis CI Enterprise](https://travis.ibm.com) as the automation tool.
