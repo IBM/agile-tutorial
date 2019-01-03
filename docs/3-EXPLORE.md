@@ -15,6 +15,23 @@
 1. Paste the `git@github.ibm.com:brl-its/agile-tutorial.git` address and select the destination.
 1. Open the newly cloned repository.
 
+## Exploring the files
+
+1. The [`.github/`](../.github/) folder contains the templates used when a new issue or pull request is created.
+1. The [`docs/`](../docs/) folder contains the step-by-step instructions for the tutorial.
+1. The [`src/`](../src/) folder contains the Python code for the API services.
+1. The [`test/`](../test/) folder contains the Python code for the API tests.
+1. The [`.editorconfig`](../.editorconfig) file contains the standardisation of coding style.
+1. The [`.gitignore`](../.gitignore) file contains the names of the files to be ignore by `git`.
+1. The [`.travis.yml`](../.travis.yml) file contains the build, test and deploy instructions for Travis CI.
+1. The [`LICENSE`](../LICENSE) file contains a standard and permissive `Apache-2.0` open-source license.
+1. The [`Procfile`](../Procfile) file contains the command required to launch the application on IBM Cloud.
+1. The [`README.md`](../README.md) file contains the welcome page of table of contents for the tutorial.
+1. The [`main.py`](../main.py) file contains the Python code for the API resources.
+1. The [`manifest.yml`](../manifest.yml) file contains the characteristics of the CloudFoundry Application on IBM Cloud.
+1. The [`requirements.txt`](../requirements.txt) file contains the list of Python dependencies.
+1. The [`runtime.txt`](../runtime.txt) file contains Python version to be used by the CloudFoundry Application on IBM Cloud.
+
 ## Testing the example implementation
 
 1. Open the <https://agile-tutorial.mybluemix.net/> application in a browser.
