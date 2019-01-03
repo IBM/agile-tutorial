@@ -13,11 +13,13 @@ using
 * Travis CI
 * Pull Requests
 * Test coverage
-* Automated testing
 * SCRUM methodology
 * ZenHub Enterprise
 * GitHub Enterprise
 * Visual Studio Code
+* Continuous Delivery
+* Continuous Deployment
+* Continuous Integration
 * CloudFoundry applications
 
 ## Instructions
