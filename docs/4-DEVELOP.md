@@ -67,6 +67,22 @@ In this section we will go over the practical steps that were broadly described 
 1. If the build failed for any reason, go back to Visual Studio Code, perform the required changes, commit and synchronise your work.
 1. Re-do the status checks by monitoring the new [Travis CI build](https://travis.ibm.com/brl-its/agile-tutorial/branches) in your branch.
 
+## Keeping up-to-date with `master`
+
+1. Once submitted, find your Pull Request in the [open PR list](https://github.ibm.com/brl-its/agile-tutorial/pulls).
+1. Scroll to the bottom and look for the mergeability check.
+1. If *This branch has no conflicts with the base branch*, you are good to go.
+1. If *This branch is out-of-date with the base branch*, merge the latest `master` into your branch.
+    * On Visual Studio Code, click button with your branch name in the bottom left corner and switch to `master`.
+    * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local `master` with GitHub.
+    * Click the `master` button in the bottom left corner and switch back to your branch.
+    * Summon the **Command Palette** with `Ctrl + Shift + P` (Windows and Linux) or `Cmd + Shift + P` (macOS).
+    * Type `merge` and select **Git: Merge Branch...** from the menu.
+    * Select the `master` branch.
+    * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local branch with GitHub.
+    * *Note:* This has the same effect as clicking the **Update branch** button on the Pull Request page.
+1. If *This branch has conflicts that must be resolved*,
+
 ## Merging and moving on
 
 1. Once the status checks are all successful, warn the reviewer that your Pull Request is pending approval.
