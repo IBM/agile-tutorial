@@ -71,8 +71,8 @@ In this section we will go over the practical steps that were broadly described 
 
 1. Once submitted, find your Pull Request in the [open PR list](https://github.ibm.com/brl-its/agile-tutorial/pulls).
 1. Scroll to the bottom and look for the mergeability check.
-1. If *This branch has no conflicts with the base branch*, you are good to go.
-1. If *This branch is out-of-date with the base branch*, merge the latest `master` into your branch.
+1. If ***This branch has no conflicts with the base branch***, you are good to go.
+1. If ***This branch is out-of-date with the base branch***, merge the latest `master` into your branch.
     * On Visual Studio Code, click button with your branch name in the bottom left corner and switch to `master`.
     * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local `master` with GitHub Enterprise.
     * Click the `master` button in the bottom left corner and switch back to your branch.
@@ -81,7 +81,7 @@ In this section we will go over the practical steps that were broadly described 
     * Select the `master` branch.
     * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local branch with GitHub Enterprise.
     * *Note:* This could also be done by clicking the **Update branch** button on the Pull Request page.
-1. If *This branch has conflicts that must be resolved*, you must fix your branch locally.
+1. If ***This branch has conflicts that must be resolved***, you must fix your branch locally.
     * On Visual Studio Code, merge the `master` branch into your working branch as explained previously.
     * Navigate through the list of merge conflicts using the **Command Palette** and the **Merge Conflicts** commands.
     * Accept the appropriate changes (**both**, *usually*) to fix the mergeability of your branch with respect to `master`.
