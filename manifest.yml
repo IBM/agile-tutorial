@@ -5,7 +5,6 @@ applications:
   disk_quota: 1G
   stack: cflinuxfs2
   name: agile-tutorial
-  command: python main.py
   buildpacks:
     - python_buildpack
   routes:
