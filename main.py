@@ -40,6 +40,14 @@ class PrintList(Resource):
     def get(self):
         return my_list
 
+@basic_ns.route('/sort')
+@basic_ns.doc(description='Sort list.')
+class SortList(Resource):
+    def put(self):
+        my_list.sort()
+        return my_list
+
+
 @math_ns.route('/max')
 @math_ns.doc(description='Max value of the list.')
 class MaxList(Resource):
