@@ -34,6 +34,13 @@ class InputList(Resource):
         return my_list
 
 
+@math_ns.route('/max')
+@math_ns.doc(description='Max value of the list.')
+class MaxList(Resource):
+    def get(self):
+        return max(my_list)
+
+
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
