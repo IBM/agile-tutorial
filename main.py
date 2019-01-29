@@ -34,11 +34,20 @@ class InputList(Resource):
         my_list.extend(bs.csv_to_list(csv))
         return my_list
 
+@basic_ns.route('/append/<int:integer>')
+@basic_ns.doc(params={'integer': 'Integer value.'}, description='Appends a single value.')
+class AppendList(Resource):
+    def put(self, integer):
+        my_list.append(integer)
+        return my_list
+
+
 @basic_ns.route('/print')
 @basic_ns.doc(description='Print list.')
 class PrintList(Resource):
     def get(self):
         return my_list
+
 
 @basic_ns.route('/sort')
 @basic_ns.doc(description='Sort list.')
