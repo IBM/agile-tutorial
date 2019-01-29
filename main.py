@@ -4,10 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
 
-from src import math_services as ms
-from src import basic_services as bs
 from src import default_services as ds
-
 
 # Setting up Python API
 my_list = list()
@@ -27,98 +24,6 @@ class TheAnswer(Resource):
         return ds.TheAnswerToLifeTheUniverseAndEverything()
 
 
-@basic_ns.route('/input/<string:csv>')
-@basic_ns.doc(params={'csv': 'Comma-separated integer values.'}, description='Inputs list.')
-class InputList(Resource):
-    def post(self, csv):
-        my_list.clear()
-        my_list.extend(bs.csv_to_list(csv))
-        return my_list
-
-# Creating the variance service
-@math_ns.route('/variance')
-@math_ns.doc(description='Variance of the list.')
-class VarianceList(Resource):
-    def get(self):
-        return ms.variance(my_list)
-
-
-@basic_ns.route('/append/<int:integer>')
-@basic_ns.doc(params={'integer': 'Integer value.'}, description='Appends a single value.')
-class AppendList(Resource):
-    def put(self, integer):
-        my_list.append(integer)
-        return my_list
-
-
-@basic_ns.route('/print')
-@basic_ns.doc(description='Print list.')
-class PrintList(Resource):
-    def get(self):
-        return my_list
-
-
-@basic_ns.route('/reset')
-@basic_ns.doc(description='Reset list.')
-class ResetList(Resource):
-    def delete(self):
-        my_list.clear()
-        return my_list
-
-
-@basic_ns.route('/sort')
-@basic_ns.doc(description='Sort list.')
-class SortList(Resource):
-    def put(self):
-        my_list.sort()
-        return my_list
-
-
-@math_ns.route('/product')
-@math_ns.doc(description='Product of the list.')
-class ProductList(Resource):
-    def get(self):
-        return ms.product(my_list)
-
-
-@basic_ns.route('/reverse')
-@basic_ns.doc(description='Reverse list.')
-class ReverseList(Resource):
-    def put(self):
-        my_list.reverse()
-        return my_list
-
-
-@math_ns.route('/max')
-@math_ns.doc(description='Max value of the list.')
-class MaxList(Resource):
-    def get(self):
-        return max(my_list)
-
-
-@basic_ns.route('/count/<int:integer>')
-@basic_ns.doc(params={'integer': 'Integer value.'}, description='Count occurrences of a value.')
-class CountList(Resource):
-    def get(self, integer):
-        return my_list.count(integer)
-
-@math_ns.route('/square')
-@math_ns.doc(description='Takes the square of the list.')
-class SquareList(Resource):
-    def put(self):
-        return ms.square_list(my_list)
-
-
-@basic_ns.route('/insert/<int:integer>/<int:position>')
-@basic_ns.doc(params={'integer': 'Integer value.', 'position': 'List position.'},
-              description='Inserts a single integer value at a given position in the list.')
-class InsertList(Resource):
-    def put(self, integer, position):
-        my_list.insert(position, integer)
-        return my_list
-
-
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
-    
