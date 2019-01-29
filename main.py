@@ -4,6 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
 
+from src import basic_services as bs
 from src import default_services as ds
 
 # Setting up Python API
@@ -22,6 +23,15 @@ math_ns = api.namespace('math', description='Math operations')
 class TheAnswer(Resource):
     def get(self):
         return ds.TheAnswerToLifeTheUniverseAndEverything()
+
+
+@basic_ns.route('/input/<string:csv>')
+@basic_ns.doc(params={'csv': 'Comma-separated integer values.'}, description='Inputs list.')
+class InputList(Resource):
+    def post(self, csv):
+        my_list.clear()
+        my_list.extend(bs.csv_to_list(csv))
+        return my_list
 
 
 port = os.getenv('PORT', '5000')
