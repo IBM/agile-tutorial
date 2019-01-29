@@ -8,6 +8,7 @@ from src import math_services as ms
 from src import basic_services as bs
 from src import default_services as ds
 
+
 # Setting up Python API
 my_list = list()
 app = Flask(__name__)
@@ -33,6 +34,14 @@ class InputList(Resource):
         my_list.clear()
         my_list.extend(bs.csv_to_list(csv))
         return my_list
+
+# Creating the variance service
+@math_ns.route('/variance')
+@math_ns.doc(description='Variance of the list.')
+class VarianceList(Resource):
+    def get(self):
+        return ms.variance(my_list)
+
 
 @basic_ns.route('/append/<int:integer>')
 @basic_ns.doc(params={'integer': 'Integer value.'}, description='Appends a single value.')

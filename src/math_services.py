@@ -1,9 +1,10 @@
 import numpy as np
 
 
-def product(integer_list):
+# Defining function to calculate the variance
+def variance(integer_list):
     """
-    Calculates the product of the list of integers.
+    Calculates the variance of the list of integers.
 
     Receives
     --------
@@ -12,6 +13,20 @@ def product(integer_list):
 
     Returns
     -------
+
+    var : float
+        Variance of the list.
+    """
+
+    integer_array = np.array(integer_list, dtype=int)
+    return np.var(integer_array).astype(float)
+
+
+def product(integer_list):
+
+    """
+    Calculates the product of the list of integers.
+
     prod : float
         Product of the list.
     """
