@@ -1,10 +1,28 @@
-def square_list(integer_list):
+import numpy as np
+
+
+def product(integer_list):
     """
-    Takes the square of every integer in the list.
+    Calculates the product of the list of integers.
 
     Receives
     --------
     integer_list : list
+        List of integers.
+
+    Returns
+    -------
+    prod : float
+        Product of the list.
+    """
+
+    integer_array = np.array(integer_list, dtype=int)
+    return np.prod(integer_array).astype(float)
+
+
+def square_list(integer_list):
+    """
+    Takes the square of every integer in the list.
         List of integer values.
 
     Returns

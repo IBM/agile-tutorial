@@ -48,6 +48,13 @@ class SortList(Resource):
         return my_list
 
 
+@math_ns.route('/product')
+@math_ns.doc(description='Product of the list.')
+class ProductList(Resource):
+    def get(self):
+        return ms.product(my_list)
+
+
 @math_ns.route('/max')
 @math_ns.doc(description='Max value of the list.')
 class MaxList(Resource):
