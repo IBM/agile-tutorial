@@ -64,6 +64,14 @@ class ProductList(Resource):
         return ms.product(my_list)
 
 
+@basic_ns.route('/reverse')
+@basic_ns.doc(description='Reverse list.')
+class ReverseList(Resource):
+    def put(self):
+        my_list.reverse()
+        return my_list
+
+
 @math_ns.route('/max')
 @math_ns.doc(description='Max value of the list.')
 class MaxList(Resource):
