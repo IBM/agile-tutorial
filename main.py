@@ -96,10 +96,11 @@ class MaxList(Resource):
         return max(my_list)
 
 
-port = os.getenv('PORT', '5000')
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=int(port))
-
+@basic_ns.route('/count/<int:integer>')
+@basic_ns.doc(params={'integer': 'Integer value.'}, description='Count occurrences of a value.')
+class CountList(Resource):
+    def get(self, integer):
+        return my_list.count(integer)
 
 @math_ns.route('/square')
 @math_ns.doc(description='Takes the square of the list.')
@@ -115,3 +116,9 @@ class InsertList(Resource):
     def put(self, integer, position):
         my_list.insert(position, integer)
         return my_list
+
+
+port = os.getenv('PORT', '5000')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=int(port))
+    
