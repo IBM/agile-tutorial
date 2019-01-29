@@ -44,3 +44,11 @@ class MaxList(Resource):
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
+
+@basic_ns.route('/insert/<int:integer>/<int:position>')
+@basic_ns.doc(params={'integer': 'Integer value.', 'position': 'List position.'},
+              description='Inserts a single integer value at a given position in the list.')
+class InsertList(Resource):
+    def put(self, integer, position):
+        my_list.insert(position, integer)
+        return my_list
