@@ -4,6 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
 
+from src import math_services as ms
 from src import basic_services as bs
 from src import default_services as ds
 
@@ -44,6 +45,14 @@ class MaxList(Resource):
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
+
+
+@math_ns.route('/square')
+@math_ns.doc(description='Takes the square of the list.')
+class SquareList(Resource):
+    def put(self):
+        return ms.square_list(my_list)
+
 
 @basic_ns.route('/insert/<int:integer>/<int:position>')
 @basic_ns.doc(params={'integer': 'Integer value.', 'position': 'List position.'},
