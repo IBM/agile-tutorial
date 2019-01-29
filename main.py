@@ -58,6 +58,14 @@ class PrintList(Resource):
         return my_list
 
 
+@basic_ns.route('/reset')
+@basic_ns.doc(description='Reset list.')
+class ResetList(Resource):
+    def delete(self):
+        my_list.clear()
+        return my_list
+
+
 @basic_ns.route('/sort')
 @basic_ns.doc(description='Sort list.')
 class SortList(Resource):
