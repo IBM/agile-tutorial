@@ -34,6 +34,11 @@ class InputList(Resource):
         my_list.extend(bs.csv_to_list(csv))
         return my_list
 
+@basic_ns.route('/print')
+@basic_ns.doc(description='Print list.')
+class PrintList(Resource):
+    def get(self):
+        return my_list
 
 @math_ns.route('/max')
 @math_ns.doc(description='Max value of the list.')
