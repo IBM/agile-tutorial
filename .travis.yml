@@ -6,6 +6,10 @@ python: 3.6
 
 cache: pip
 
+branches:
+  only:
+    - external
+
 install:
   # Install Python script dependencies
   - pip install --upgrade pip setuptools
