@@ -1,24 +1,21 @@
-dist: trusty
-
-group: bluezone
+dist: xenial
 
 language: python
 
-python:
-    - "3.6"
+python: 3.6
 
 cache: pip
 
 install:
   # Install Python script dependencies
-  - pip install --quiet --upgrade pip setuptools
-  - pip install --quiet --upgrade -r requirements.txt
+  - pip install --upgrade pip setuptools
+  - pip install --upgrade -r requirements.txt
 
   # Install Python linter
-  - pip install --quiet --upgrade flake8
+  - pip install --upgrade flake8
 
   # Install Python testing and coverage
-  - pip install --quiet --upgrade pytest pytest-cov
+  - pip install --upgrade pytest pytest-cov
 
 before_script:
   # Run Python linter
@@ -39,7 +36,7 @@ deploy:
   api: https://api.ng.bluemix.net
   on:
     branch:
-      - master
+      - external
 
 notifications:
-  slack: ibm-research:gsBidsvzx4efe07iBit0931m
+  slack: cloud-iot-ufrj:sXcQdHCksbSxrPLgmQTu5xSZ
