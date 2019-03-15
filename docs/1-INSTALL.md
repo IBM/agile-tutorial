@@ -30,14 +30,13 @@
 1. Analyze the steps of the latest build log and compare it to the commands in the [`.travis.yml`](../.travis.yml) file.
 1. Check the status of each build in the [Branches](https://travis.ibm.com/brl-its/agile-tutorial/branches) tab.
 
-## Setting up ZenHub Enterprise
+## Setting up ZenHub
 
-1. Go to the [ZenHub Enterprise](https://zenhub.ibm.com/setup/download) page.
-1. Choose and install the appropriate browser extension or web application
-    * Browser extension: only for Google Chrome and Firefox.
-    * Web application: any browser.
-1. Sign in with your **GitHub Enterprise** credentials.
-1. Select `brl-its` as organization and `agile-tutorial` as repository in the [web app](https://zenhub.ibm.com/app/workspaces/agile-tutorial-5c240173b7d41fe10dbe52e6/boards) or the [ZenHub tab](https://github.ibm.com/brl-its/agile-tutorial#zenhub) using the browser extension.
+1. Go to the [ZenHub Browser Extension](https://www.zenhub.com/extension) page.
+1. Install the appropriate browser extension (only for Google Chrome and Firefox).
+    * *Note*: Alternatively, you can use the [ZenHub Web Application](https://app.zenhub.com/login) in any browser.
+1. Sign in with your **GitHub** credentials.
+1. Select `neumannrf` as organization and `agile-tutorial` as repository in the [web app](https://app.zenhub.com/workspaces/cloud--iot--ufrj-5c8aff81fd0adb6f09c8371b/boards) or the [ZenHub tab](https://github.com/neumannrf/agile-tutorial#zenhub) using the browser extension.
 
 ## Installing Visual Studio Code
 
