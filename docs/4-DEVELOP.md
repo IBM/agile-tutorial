@@ -32,7 +32,7 @@ In this section we will go over the practical steps that were broadly described 
 1. Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local repository with GitHub.
 1. Click the `external` button in the bottom left corner and select **Create new branch**.
 1. Choose a descriptive name for your branch that resembles the issue that it addresses.
-    * *Example*: `basic_input-2` is a *very good* name for [issue #2](https://github.com/neumannrf/agile-tutorial/issues/2) (Create `/basic/input` resource).
+    * *Example*: `basic_input-3` is a *very good* name for [issue #3](https://github.com/neumannrf/agile-tutorial/issues/3) (Create `/basic/input` resource).
 1. Perform all the code changes described in your issue.
 1. Open the **Source Control** panel in the top left bar.
 1. Click the `+` icon next to all the modified files to **Stage Changes**.
