@@ -2,17 +2,16 @@
 
 ## Cloning the repository
 
-1. Go to [IBM GitHub Enterprise](https://github.ibm.com/).
-1. Login using your IBM credentials.
-1. From the drop-down menu on the left, choose the [`brl-its`](https://github.ibm.com/brl-its) organization.
-1. Go to the [`agile-tutorial`](https://github.ibm.com/brl-its/agile-tutorial) repository page.
-1. Click the green button **Clone or download** and copy the address `git@github.ibm.com:brl-its/agile-tutorial.git`.
+1. Log in to [GitHub](https://github.com/).
+1. From the drop-down menu on the left, choose the [`neumannrf`](https://github.com/neumannrf) organization.
+1. Go to the [`agile-tutorial`](https://github.com/neumannrf/agile-tutorial) repository page.
+1. Click the green button **Clone or download** and copy the address `git@github.com:neumannrf/agile-tutorial.git`.
 1. Open **Visual Studio Code** and summon the **Command Palette** with
     * `Ctrl + Shift + P` in [Fedora](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
     * `Ctrl + Shift + P` in [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
     * `Cmd + Shift + P` in [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 1. Type `clone` and select **Git: Clone** from the list.
-1. Paste the `git@github.ibm.com:brl-its/agile-tutorial.git` address and select the destination.
+1. Paste the `git@github.com:neumannrf/agile-tutorial.git` address and select the destination.
 1. Open the newly cloned repository.
 
 ## Exploring the files
@@ -64,6 +63,6 @@
 
 1. Open the `agile-tutorial` repository in Visual Studio Code.
 1. Open the `test/default_test.py` file.
-1. Read the code block associated with the `test_answer()` test and compare it to the Travis CI [build log](https://travis.ibm.com/brl-its/agile-tutorial).
+1. Read the code block associated with the `test_answer()` test and compare it to the Travis CI [build log](https://travis-ci.com/neumannrf/agile-tutorial).
     * `from src import default_services as ds` includes the external file containing the service to be tested.
     * `assert` determines what is the expect behaviour for that service.
