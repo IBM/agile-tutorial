@@ -17,7 +17,7 @@
 ## Using the "GitHub Flow" branching model
 
 1. Read the [GitHub Flow](https://guides.github.com/introduction/flow/) branching model description.
-1. Locate the issue that has been assigned to you in the [ZenHub board](https://zenhub.ibm.com/app/workspaces/agile-tutorial-5c240173b7d41fe10dbe52e6/boards).
+1. Locate the issue that has been assigned to you in the [ZenHub board](https://app.zenhub.com/workspaces/agile-tutorial-5c8b0869fd0adb6f09c8373c/boards).
 1. Create a new [branch](https://help.github.com/articles/github-glossary/#branch) from `master`, making sure the branch name resembles the associated issue.
 1. Add new code to your branch by making [commits](https://help.github.com/articles/github-glossary/#commit) and writing meaningful commit messages.
 1. Create a [Pull Request](https://help.github.com/articles/github-glossary/#pull-request) from your branch into branch `master` and explain the proposed changes.
@@ -34,4 +34,4 @@
     * automated builds
     * automated tests
     * automated deployments
-1. We will use [Travis CI Enterprise](https://travis.ibm.com) as the automation tool.
+1. We will use [Travis CI](https://travis-ci.com) as the automation tool.
