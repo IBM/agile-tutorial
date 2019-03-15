@@ -9,14 +9,15 @@ and technologies.
 By the end of this tutorial everyone should be able to develop cloud applications collaboratively
 using
 
+* GitHub
+* ZenHub
 * IBM Cloud
 * Travis CI
 * Pull Requests
 * Test coverage
 * SCRUM methodology
-* ZenHub Enterprise
-* GitHub Enterprise
 * Visual Studio Code
+* Continuous Delivery
 * Continuous Deployment
 * Continuous Integration
 * CloudFoundry applications
@@ -24,8 +25,8 @@ using
 ## Instructions
 
 1. Read [**Installing developer tools and environments**](docs/1-INSTALL.md) and follow the steps.
-    1. [Setting up GitHub Enterprise environment](docs/1-INSTALL.md#setting-up-github-enterprise-environment)
-    1. [Setting up Travis CI Enterprise](docs/1-INSTALL.md#setting-up-travis-ci-enterprise)
+    1. [Setting up GitHub environment](docs/1-INSTALL.md#setting-up-github-environment)
+    1. [Setting up Travis CI](docs/1-INSTALL.md#setting-up-travis-ci)
     1. [Setting up ZenHub](docs/1-INSTALL.md#setting-up-zenhub)
     1. [Installing Visual Studio Code](docs/1-INSTALL.md#installing-visual-studio-code)
 
