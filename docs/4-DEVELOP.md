@@ -29,8 +29,8 @@ We will assume, for the sake of this exercise, that **each sprint lasts 15 minut
 In this section we will go over the practical steps that were broadly described in [*Using the "GitHub Flow" branching model*](2-UNDERSTAND.md#using-the-github-flow-branching-model).
 
 1. Open the `agile-tutorial` repository in Visual Studio Code.
-1. Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local repository with GitHub Enterprise.
-1. Click the `master` button in the bottom left corner and select **Create new branch**.
+1. Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local repository with GitHub.
+1. Click the `external` button in the bottom left corner and select **Create new branch**.
 1. Choose a descriptive name for your branch that resembles the issue that it addresses.
     * *Example*: `basic_input-3` is a *very good* name for [issue #3](https://github.ibm.com/brl-its/agile-tutorial/issues/3) (Create `/basic/input` resource).
 1. Perform all the code changes described in your issue.
@@ -67,25 +67,25 @@ In this section we will go over the practical steps that were broadly described 
 1. If the build failed for any reason, go back to Visual Studio Code, perform the required changes, commit and synchronise your work.
 1. Re-do the status checks by monitoring the new [Travis CI build](https://travis.ibm.com/brl-its/agile-tutorial/branches) in your branch.
 
-## Keeping up-to-date with `master`
+## Keeping up-to-date with `external`
 
 1. Once submitted, find your Pull Request in the [open PR list](https://github.ibm.com/brl-its/agile-tutorial/pulls).
 1. Scroll to the bottom and look for the mergeability check.
 1. If ***This branch has no conflicts with the base branch***, you are good to go.
-1. If ***This branch is out-of-date with the base branch***, merge the latest `master` into your branch.
-    * On Visual Studio Code, click button with your branch name in the bottom left corner and switch to `master`.
-    * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local `master` with GitHub Enterprise.
-    * Click the `master` button in the bottom left corner and switch back to your branch.
+1. If ***This branch is out-of-date with the base branch***, merge the latest `external` into your branch.
+    * On Visual Studio Code, click button with your branch name in the bottom left corner and switch to `external`.
+    * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local `external` with GitHub.
+    * Click the `external` button in the bottom left corner and switch back to your branch.
     * Summon the **Command Palette** with `Ctrl + Shift + P` (Windows and Linux) or `Cmd + Shift + P` (macOS).
     * Type `merge` and select **Git: Merge Branch...** from the menu.
-    * Select the `master` branch.
-    * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local branch with GitHub Enterprise.
+    * Select the `external` branch.
+    * Click the :arrows_counterclockwise: icon in the bottom left corner to synchronise your local branch with GitHub.
     * *Note:* This could also be done by clicking the **Update branch** button on the Pull Request page.
 1. If ***This branch has conflicts that must be resolved***, you must fix your branch locally.
-    * On Visual Studio Code, merge the `master` branch into your working branch as explained previously.
+    * On Visual Studio Code, merge the `external` branch into your working branch as explained previously.
     * Navigate through the list of merge conflicts using the **Command Palette** and the **Merge Conflicts** commands.
-    * Accept the appropriate changes (**both**, *usually*) to fix the mergeability of your branch with respect to `master`.
-    * When you are done fixing all the merge conflicts, stage, commit and sync your changes to GitHub Enterprise.
+    * Accept the appropriate changes (**both**, *usually*) to fix the mergeability of your branch with respect to `external`.
+    * When you are done fixing all the merge conflicts, stage, commit and sync your changes to GitHub.
     * *Note:* This could also be done by clicking the **Resolve conflicts** button on the Pull Request page.
 
 ## Merging and moving on
@@ -94,7 +94,7 @@ In this section we will go over the practical steps that were broadly described 
 1. The reviewer will either **Approve** or **Request changes** to your PR.
 1. If the reviewer **Requested changes**, you should address them by submitting new code to your branch.
 1. If the reviewer **Approved** your Pull Request, no action is required.
-1. After all the approvals, status checks and branch protections have been satisfied, your branch will be merged into `master`.
+1. After all the approvals, status checks and branch protections have been satisfied, your branch will be merged into `external`.
 1. Go back to Visual Studio Code and click the button with your branch name in the bottom left corner.
-1. Synchronise your local `master` branch with that of GitHub Enterprise by clicking the :arrows_counterclockwise: icon on the bottom left corner.
+1. Synchronise your local `external` branch with that of GitHub by clicking the :arrows_counterclockwise: icon on the bottom left corner.
 1. Get ready for the next sprint!!!

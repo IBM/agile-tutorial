@@ -18,15 +18,15 @@
 
 1. Read the [GitHub Flow](https://guides.github.com/introduction/flow/) branching model description.
 1. Locate the issue that has been assigned to you in the [ZenHub board](https://app.zenhub.com/workspaces/agile-tutorial-5c8b0869fd0adb6f09c8373c/boards).
-1. Create a new [branch](https://help.github.com/articles/github-glossary/#branch) from `master`, making sure the branch name resembles the associated issue.
+1. Create a new [branch](https://help.github.com/articles/github-glossary/#branch) from `external`, making sure the branch name resembles the associated issue.
 1. Add new code to your branch by making [commits](https://help.github.com/articles/github-glossary/#commit) and writing meaningful commit messages.
-1. Create a [Pull Request](https://help.github.com/articles/github-glossary/#pull-request) from your branch into branch `master` and explain the proposed changes.
+1. Create a [Pull Request](https://help.github.com/articles/github-glossary/#pull-request) from your branch into branch `external` and explain the proposed changes.
 1. Discuss you submission in the Pull Request review process, ensuring all [status checks](https://help.github.com/articles/github-glossary/#status-checks) are successful.
-1. Once the Pull Request has been approved, [merge](https://help.github.com/articles/github-glossary/#merge) your branch into `master`.
+1. Once the Pull Request has been approved, [merge](https://help.github.com/articles/github-glossary/#merge) your branch into `external`.
 
 ## Automating integration, delivery and deployment
 
-1. [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) is the practice of merging all developer branches into the `master` branch as often as possible.
+1. [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration) is the practice of merging all developer branches into the `external` branch as often as possible.
 1. [Continuous Delivery](https://en.wikipedia.org/wiki/Continuous_delivery) is the practice of producing fully working (tested) incremental updates that could potentially be deployed at any time.
 1. [Continuous Deployment](https://en.wikipedia.org/wiki/Continuous_deployment) is the practice to automating the deployments of each new version that is delivered.
 1. Although there are overlaps between those concepts, when they are all applied, one ends up with

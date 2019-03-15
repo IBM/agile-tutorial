@@ -24,13 +24,13 @@
 1. The [`.editorconfig`](../.editorconfig) file contains the standardisation of coding style.
 1. The [`.gitignore`](../.gitignore) file contains the names of the files to be ignore by `git`.
 1. The [`.travis.yml`](../.travis.yml) file contains the build, test and deploy instructions for Travis CI.
-1. The [`LICENSE`](../LICENSE) file contains the standard `Apache-2.0` open-source license.
-1. The [`Procfile`](../Procfile) file contains the command required to launch the CloudFoundry Application on IBM Cloud.
+1. The [`LICENSE`](../LICENSE.md) file contains the standard `Apache-2.0` open-source license.
+1. The [`Procfile`](../Procfile) file contains the command required to launch the Cloud Foundry Application on IBM Cloud.
 1. The [`README.md`](../README.md) file contains the welcome page and table of contents for the tutorial.
 1. The [`main.py`](../main.py) file contains the Python code for the API resources.
-1. The [`manifest.yml`](../manifest.yml) file contains the definition of the CloudFoundry Application on IBM Cloud.
+1. The [`manifest.yml`](../manifest.yml) file contains the definition of the Cloud Foundry Application on IBM Cloud.
 1. The [`requirements.txt`](../requirements.txt) file contains the list of Python dependencies.
-1. The [`runtime.txt`](../runtime.txt) file contains Python version to be used by the CloudFoundry Application on IBM Cloud.
+1. The [`runtime.txt`](../runtime.txt) file contains Python version to be used by the Cloud Foundry Application on IBM Cloud.
 
 ## Testing the example implementation
 

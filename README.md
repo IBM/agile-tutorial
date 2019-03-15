@@ -20,7 +20,7 @@ using
 * Continuous Delivery
 * Continuous Deployment
 * Continuous Integration
-* CloudFoundry applications
+* Cloud Foundry applications
 
 ## Instructions
 
@@ -48,5 +48,5 @@ using
     1. [Contributing to your branch](docs/4-DEVELOP.md#contributing-to-your-branch)
     1. [Submitting your Pull Request](docs/4-DEVELOP.md#submitting-your-pull-request)
     1. [Tracking status checks](docs/4-DEVELOP.md#tracking-status-checks)
-    1. [Keeping up-to-date with `master`](docs/4-DEVELOP.md#keeping-up-to-date-with-master)
+    1. [Keeping up-to-date with `external`](docs/4-DEVELOP.md#keeping-up-to-date-with-external)
     1. [Merging and moving on](docs/4-DEVELOP.md#merging-and-moving-on)
