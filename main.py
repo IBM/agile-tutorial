@@ -82,6 +82,14 @@ class InsertList(Resource):
         return my_list
 
 
+@basic_ns.route('/sort')
+@basic_ns.doc(description='Sort list.')
+class SortList(Resource):
+    def put(self):
+        my_list.sort()
+        return my_list
+
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
+
