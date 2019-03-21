@@ -10,7 +10,7 @@ from src import default_services as ds
 my_list = list()
 app = Flask(__name__)
 app.wsgi_app = ProxyFix(app.wsgi_app)
-api = Api(app, version='1.0', title='Agile Tutorial', description='A simple Python API')
+api = Api(app, version='1.0', doc='/', title='Agile Tutorial', description='A simple Python API')
 
 # Creating custom API namespaces
 basic_ns = api.namespace('basic', description='List manipulation')
