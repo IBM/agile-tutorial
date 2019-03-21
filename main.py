@@ -19,6 +19,13 @@ basic_ns = api.namespace('basic', description='List manipulation')
 math_ns = api.namespace('math', description='Math operations')
 
 
+@math_ns.route('/double')
+@math_ns.doc(description='Multiply list by 2.')
+class DoubleList(Resource):
+    def put(self):
+        return ms.double_list(my_list)
+
+
 @api.route('/answer')
 @api.doc(description='The Answer to the Ultimate Question of Life, the Universe, and Everything.')
 class TheAnswer(Resource):
@@ -43,9 +50,3 @@ class ResetList(Resource):
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
-
-@math_ns.route('/double')
-@math_ns.doc(description='Multiply list by 2.')
-class DoubleList(Resource):
-    def put(self):
-        return ms.double_list(my_list)
