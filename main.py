@@ -18,6 +18,11 @@ api = Api(app, version='1.0', title='Agile Tutorial', description='A simple Pyth
 basic_ns = api.namespace('basic', description='List manipulation')
 math_ns = api.namespace('math', description='Math operations')
 
+@basic_ns.route('/print')
+@basic_ns.doc(description='Print list.')
+class PrintList(Resource):
+    def get(self):
+        return my_list
 
 @math_ns.route('/double')
 @math_ns.doc(description='Multiply list by 2.')
