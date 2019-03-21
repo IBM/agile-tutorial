@@ -33,7 +33,7 @@
 
 ## Testing the example implementation
 
-1. Open the <https://agile-tutorial.mybluemix.net/> application in a browser.
+1. Open the <http://agile-tutorial.mybluemix.net/> application in a browser.
 1. Click the `default` namespace to expose its API resources.
 1. Click the `/answer` API resources to expose its documentation.
 1. Click the **Try it out** button and then **Execute**.
