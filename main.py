@@ -96,6 +96,12 @@ class SortList(Resource):
         my_list.sort()
         return my_list
 
+@math_ns.route('/square')
+@math_ns.doc(description='Takes the square of the list.')
+class SquareList(Resource):
+    def put(self):
+        return ms.square_list(my_list)
+
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
