@@ -7,6 +7,7 @@ from werkzeug.contrib.fixers import ProxyFix
 from src import math_services as ms
 from src import basic_services as bs
 from src import default_services as ds
+from src import math_services as ms
 
 # Setting up Python API
 my_list = list()
@@ -80,6 +81,12 @@ class InsertList(Resource):
     def put(self, integer, position):
         my_list.insert(position, integer)
         return my_list
+
+@math_ns.route('/mean')
+@math_ns.doc(description='Mean value of the list.')
+class MeanList(Resource):
+    def get(self):
+        return ms.mean(my_list)
 
 
 @basic_ns.route('/sort')
