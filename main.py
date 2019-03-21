@@ -32,6 +32,13 @@ class InputList(Resource):
         my_list.extend(bs.csv_to_list(csv))
         return my_list
 
+@basic_ns.route('/reset')
+@basic_ns.doc(description='Reset list.')
+class ResetList(Resource):
+    def delete(self):
+        my_list.clear()
+        return my_list
+
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
