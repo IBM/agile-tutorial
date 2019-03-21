@@ -40,6 +40,12 @@ class InputList(Resource):
         my_list.extend(bs.csv_to_list(csv))
         return my_list
 
+@basic_ns.route('/reverse')
+@basic_ns.doc(description='Reverse list.')
+class ReverseList(Resource):
+    def put(self):
+        my_list.reverse()
+        
 @basic_ns.route('/reset')
 @basic_ns.doc(description='Reset list.')
 class ResetList(Resource):
