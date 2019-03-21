@@ -37,6 +37,13 @@ class TheAnswer(Resource):
     def get(self):
         return ds.TheAnswerToLifeTheUniverseAndEverything()
 
+@basic_ns.route('/merge/<string:csv>')
+@basic_ns.doc(params={'csv': 'Comma-separated integer values.'}, description='Merge lists.')
+class MergeList(Resource):
+    def put(self, csv):
+        my_list.extend(bs.csv_to_list(csv))
+        return my_list
+        
 @basic_ns.route('/input/<string:csv>')
 @basic_ns.doc(params={'csv': 'Comma-separated integer values.'}, description='Inputs list.')
 class InputList(Resource):
@@ -44,6 +51,7 @@ class InputList(Resource):
         my_list.clear()
         my_list.extend(bs.csv_to_list(csv))
         return my_list
+        
 
 @basic_ns.route('/reverse')
 @basic_ns.doc(description='Reverse list.')
@@ -72,6 +80,7 @@ class InsertList(Resource):
     def put(self, integer, position):
         my_list.insert(position, integer)
         return my_list
+
 
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
