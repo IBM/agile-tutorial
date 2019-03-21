@@ -57,6 +57,13 @@ class ResetList(Resource):
     def delete(self):
         my_list.clear()
         return my_list
+        
+@basic_ns.route('/length')
+@basic_ns.doc(description='List length.')
+class LengthList(Resource):
+    def get(self):
+        return len(my_list)
+
 
 @basic_ns.route('/insert/<int:integer>/<int:position>')
 @basic_ns.doc(params={'integer': 'Integer value.', 'position': 'List position.'},
