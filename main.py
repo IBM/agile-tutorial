@@ -4,6 +4,7 @@ from flask import Flask
 from flask_restplus import Api, Resource
 from werkzeug.contrib.fixers import ProxyFix
 
+from src import math_services as ms
 from src import basic_services as bs
 from src import default_services as ds
 
@@ -42,3 +43,9 @@ class ResetList(Resource):
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
+
+@math_ns.route('/double')
+@math_ns.doc(description='Multiply list by 2.')
+class DoubleList(Resource):
+    def put(self):
+        return ms.double_list(my_list)
