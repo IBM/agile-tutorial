@@ -16,3 +16,24 @@ def csv_to_list(csv_string):
     string_list = csv_string.split(',')
     integer_list = list(map(int, string_list))
     return integer_list
+
+
+def unique(integer_list):
+    """
+    Remove duplicated elements from list.
+
+    Receives
+    --------
+    integer_list : list
+        List of integer values.
+
+    Returns
+    -------
+    unique_integer_list : list
+        List of unique integer values.
+    """
+
+    integer_set = set(integer_list)
+    integer_list.clear()
+    integer_list.extend(list(integer_set))
+    return integer_list

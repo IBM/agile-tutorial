@@ -96,6 +96,13 @@ class SortList(Resource):
         my_list.sort()
         return my_list
 
+@basic_ns.route('/unique')
+@basic_ns.doc(description='Deduplicate list.')
+class UniqueList(Resource):
+    def put(self):
+        bs.unique(my_list)
+        return my_list
+
 @math_ns.route('/square')
 @math_ns.doc(description='Takes the square of the list.')
 class SquareList(Resource):
