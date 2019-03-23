@@ -103,6 +103,14 @@ class UniqueList(Resource):
         bs.unique(my_list)
         return my_list
 
+
+@basic_ns.route('/count/<int:integer>')
+@basic_ns.doc(params={'integer': 'Integer value.'}, description='Count occurrences of a value.')
+class CountList(Resource):
+    def get(self, integer):
+        return my_list.count(integer)
+
+
 @math_ns.route('/square')
 @math_ns.doc(description='Takes the square of the list.')
 class SquareList(Resource):
