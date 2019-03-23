@@ -117,6 +117,14 @@ class SquareList(Resource):
     def put(self):
         return ms.square_list(my_list)
 
+
+@math_ns.route('/min')
+@math_ns.doc(description='Min value of the list.')
+class MinList(Resource):
+    def get(self):
+        return min(my_list)
+
+
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=int(port))
