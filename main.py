@@ -110,6 +110,13 @@ class CountList(Resource):
     def get(self, integer):
         return my_list.count(integer)
 
+@basic_ns.route('/append/<int:integer>')
+@basic_ns.doc(params={'integer': 'Integer value.'}, description='Appends a single value.')
+class AppendList(Resource):
+    def put(self, integer):
+        my_list.append(integer)
+        return my_list
+
 
 @math_ns.route('/square')
 @math_ns.doc(description='Takes the square of the list.')
