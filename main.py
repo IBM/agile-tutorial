@@ -138,6 +138,12 @@ class MaxList(Resource):
     def get(self):
         return max(my_list)
 
+@math_ns.route('/triple')
+@math_ns.doc(description='Multiply list by 3.')
+class TripleList(Resource):
+    def put(self):
+        return ms.triple_list(my_list)
+
 
 port = os.getenv('PORT', '5000')
 if __name__ == "__main__":

@@ -27,3 +27,11 @@ def test_square_list():
     assert ms.square_list([2]) == [4]
     assert ms.square_list([1, 2]) == [1, 4]
     assert ms.square_list([1, 2, 3]) == [1, 4, 9]
+
+
+def test_triple_list():
+    assert ms.triple_list([]) == []
+    assert ms.triple_list([1]) == [3]
+    assert ms.triple_list([2]) == [6]
+    assert ms.triple_list([1, 2]) == [3, 6]
+    assert ms.triple_list([1, 2, 3]) == [3, 6, 9]

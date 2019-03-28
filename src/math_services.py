@@ -60,3 +60,24 @@ def square_list(integer_list):
     integer_list.clear()
     integer_list.extend(squared_list)
     return integer_list
+
+
+def triple_list(integer_list):
+    """
+    Multiplies every integer in the list by 3.
+
+    Receives
+    --------
+    integer_list : list
+        List of integer values.
+
+    Returns
+    -------
+    tripled_list : list
+        List of integer values multiplied by 3.
+    """
+
+    tripled_list = [3*x for x in integer_list]
+    integer_list.clear()
+    integer_list.extend(tripled_list)
+    return integer_list
