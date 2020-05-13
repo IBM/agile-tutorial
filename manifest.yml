@@ -3,7 +3,6 @@ applications:
   instances: 1
   memory: 128M
   disk_quota: 1G
-  stack: cflinuxfs2
   name: agile-tutorial
   buildpacks:
     - python_buildpack

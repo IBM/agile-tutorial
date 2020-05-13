@@ -2,7 +2,8 @@ dist: xenial
 
 language: python
 
-python: 3.6
+python:
+  - "3.7"
 
 cache: pip
 
@@ -36,8 +37,6 @@ deploy:
   organization: rneumann@br.ibm.com
   space: dev
   manifest: manifest.yml
-  region: ng
-  api: https://api.ng.bluemix.net
   on:
     branch:
       - external
