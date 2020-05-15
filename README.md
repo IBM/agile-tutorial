@@ -17,7 +17,6 @@ using
 * Test coverage
 * SCRUM methodology
 * Visual Studio Code
-* Continuous Delivery
 * Continuous Deployment
 * Continuous Integration
 * Cloud Foundry applications
